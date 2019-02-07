@@ -1,0 +1,33 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Inspecting tutor effect on the Treated, OLS, TOA Math Non Verbal}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &               0.351   &               0.291   &               0.505** &               0.424*  \\
+                    &             (0.364)   &             (0.239)   &             (0.251)   &             (0.219)   \\
+Tutor\_2 X Treatment         &               0.837   &               0.885** &               0.362   &               0.522*  \\
+                    &             (0.504)   &             (0.383)   &             (0.339)   &             (0.310)   \\
+Tutor\_3 X Treatment         &               0.502   &               0.566** &               0.175   &               0.322   \\
+                    &             (0.480)   &             (0.277)   &             (0.300)   &             (0.280)   \\
+Tutor\_4 X Treatment         &              -0.111   &               0.208   &              -0.109   &              0.0821   \\
+                    &             (0.398)   &             (0.306)   &             (0.238)   &             (0.247)   \\
+Tutor\_5 X Treatment         &               0.531   &               0.417   &               0.321   &               0.308   \\
+                    &             (0.478)   &             (0.425)   &             (0.409)   &             (0.383)   \\
+Baseline outcome	&                       &                       &               0.759***&               0.533***\\
+                    &                       &                       &            (0.0893)   &             (0.110)   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  84   &                  84   &                  84   &                  84   \\
+LL                  &                -116   &                 -87   &                 -80   &                 -67   \\
+AIC                 &                 243   &                 198   &                 175   &                 160   \\
+BIC                 &                 258   &                 228   &                 192   &                 192   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized coefficients. Robust standard errors in parentheses. Reference category for tutor (omitted):}\\
+\multicolumn{5}{l}{\footnotesize Tutor\_1. Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:tutorNV_class}
+\end{table}

@@ -1,0 +1,32 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Inspecting tutor effect on the Treated, OLS, TOA Math}
+\begin{tabular}{l*{6}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{3}{c}{Benchmark models}                                   &\multicolumn{3}{c}{Including baseline outcome}                         \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\midrule
+Tutor\_2  &               0.125   &               0.167   &               0.221   &               0.089   &               0.099   &               0.146   \\
+                    &             (5.206)   &             (4.269)   &             (3.954)   &             (3.303)   &             (3.399)   &             (3.386)   \\
+Tutor\_3   &               0.079   &               0.148   &               0.111   &               0.103   &               0.135   &               0.065   \\
+                    &             (5.206)   &             (4.294)   &             (3.778)   &             (3.593)   &             (3.816)   &             (3.531)   \\
+Tutor\_4 &              -0.176   &              -0.007   &               0.058   &               0.012   &               0.048   &               0.117   \\
+                    &             (5.409)   &             (4.572)   &             (4.331)   &             (3.651)   &             (3.865)   &             (3.885)   \\
+Tutor\_5 &               0.111   &               0.180   &               0.120   &               0.056   &               0.086   &               0.054   \\
+                    &             (5.206)   &             (4.294)   &             (4.036)   &             (3.306)   &             (3.466)   &             (3.419)   \\
+Baseline outcome    &                       &                       &                       &               0.785***&               0.698***&               0.510** \\
+                    &                       &                       &                       &            (0.0919)   &             (0.168)   &             (0.172)   \\
+Program type FE     &                  No   &                 Yes   &                  No   &                  No   &                  Yes   &                  No   \\
+Class FE            &                  No   &                  No   &                 Yes   &                  No   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  41   &                  41   &                  41   &                  38   &                  38   &                  38   \\
+LL                  &                -154   &                -144   &                -136   &                -124   &                -124   &                -117   \\
+AIC                 &                 317   &                 303   &                 293   &                 261   &                 263   &                 258   \\
+BIC                 &                 326   &                 315   &                 312   &                 271   &                 276   &                 278   \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Standardized beta coefficients; Standard errors in parentheses.}\\
+\multicolumn{7}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017. Reference category for tutor (omitted): Tutor\_1.}\\
+\multicolumn{7}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:tutor}
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA Math (Verbal): Treatment effect, OLS}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect         &               0.555***&               0.555***&               0.545***&               0.537***\\
+                    &             (0.130)   &             (0.167)   &             (0.124)   &             (0.137)   \\
+Baseline outcome     &                       &                       &               0.413*  &               0.787***\\
+                    &                       &                       &             (0.219)   &             (0.120)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  76   &                  76   &                  76   &                  76   \\
+LL                  &                 -37   &                 -80   &                 -33   &                 -64   \\
+AIC                 &                 152   &                 175   &                 147   &                 145   \\
+BIC                 &                 243   &                 194   &                 240   &                 166   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized coefficients; Robust standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toarek}
+\end{table}

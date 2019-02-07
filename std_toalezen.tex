@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Inspecting side-effects of HDT on TOA Reading, OLS}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &              0.068   &              0.068   &              0.072   &              0.072   \\
+                    &             (0.197)   &             (0.195)   &             (0.168)   &             (0.166)   \\
+Baseline outcome &                       &                       &               0.451***&               0.476***\\
+                    &                       &                       &             (0.122)   &             (0.118)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  72   &                  72   &                  72   &                  72   \\
+LL                  &                 -63   &                 -84   &                 -51   &                 -72   \\
+AIC                 &                 201   &                 184   &                 178   &                 162   \\
+BIC                 &                 285   &                 203   &                 264   &                 183   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized beta coefficients; Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2017; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toalezen}
+\end{table}

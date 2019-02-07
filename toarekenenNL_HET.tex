@@ -1,0 +1,58 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA Math (Non-language): Heterogeneity in Treatment effect, OLS}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark model} &\multicolumn{2}{c}{Including baseline outcome}   \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &               0.544***&               0.324***&               0.537***&               0.322***\\
+                    &             (2.716)   &             (1.606)   &             (2.722)   &             (1.607)   \\
+Baseline outcome	&                       &                       &               0.146   &               0.151   \\
+					&                       &                       &             (0.163)   &             (0.167)   \\			
+Treatment $\times$ 1A2&            -0.153    &                      &           -0.145     &                       \\
+					&             (3.840)   &                       	&             (3.854)   &                       \\
+Treatment $\times$ 1B1&              -0.202*  &                     &            -0.201*  &                       \\
+					&             (3.840)   &                       &             (3.844)   &                       \\
+Treatment $\times$ 1J1&           -0.031      &                     &            -0.037   &                         \\
+					&             (3.850)   &                       &             (3.840)   &                       \\
+Treatment $\times$ 1R2&              -0.300***&                     &            -0.297***&                         \\
+					&             (3.997)   &                       &             (4.003)   &                       \\
+Treatment $\times$ 1R3&            -0.103     &                     &          -0.101     &                         \\
+					&             (4.503)   &                       &             (4.509)   &                       \\
+Treatment $\times$ 1R4&           -0.152      &                     &             -0.146  &                         \\
+					&             (4.207)   &                       &             (4.216)   &                       \\
+Treatment $\times$ PRO&                       &             -0.146  &                     &            -0.145       \\
+					&                       &             (2.487)   &                       &             (2.489)   \\
+Treatment $\times$ ISK&                       &              0.094  &                     &                0.085     \\
+					&                       &             (3.211)   &                       &             (3.228)   \\
+1A2                 &               0.279   &                       &               0.197   &                       \\
+                    &             (5.431)   &                       &             (5.858)   &                       \\
+1B1                  &               0.664***&                     &               0.518*  &                        \\
+                    &             (5.431)   &                       &             (6.661)   &                       \\
+1J1                 &               0.100   &                       &               0.044   &                       \\
+                    &             (5.431)   &                       &             (5.625)   &                       \\
+1R2                 &               0.112   &                       &               0.061   &                       \\
+                    &             (5.460)   &                       &             (5.652)   &                       \\
+1R3                 &              -0.128   &                       &              -0.151   &                       \\
+                    &             (5.557)   &                       &             (5.617)   &                       \\
+1R4                 &               0.214   &                       &               0.150   &                       \\
+                    &             (5.499)   &                       &             (5.822)   &                       \\
+PRO                 &                       &               0.246   &                       &               0.153   \\
+                    &                       &             (5.349)   &                       &             (5.663)   \\
+ISK                 &                       &               0.018   &                       &              -0.038   \\
+                    &                       &             (5.445)   &                       &             (5.630)   \\
+Pair FE             &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Obs                 &                  89   &                  89   &                  89   &                  89   \\
+LL                  &                -231   &                -237   &                -229   &                -236   \\
+AIC                 &                 567   &                 573   &                 567   &                 573   \\
+BIC                 &                 699   &                 695   &                 701   &                 697   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized beta coefficients; Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2017; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize Reference category for school type (omitted): VMBO; Reference category for class (omitted): 1A1.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toarekNV_HET}
+\end{table}

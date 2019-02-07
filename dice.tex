@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of treatment on Cheating Behaviour}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}    &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &              -0.449***&              -0.449***&              -0.389***&              -0.417***\\
+                    &             (0.123)   &             (0.109)   &             (0.128)   &             (0.109)   \\
+Baseline outcome    &                       &                       &               0.322** &               0.173*  \\
+                    &                       &                       &             (0.139)   &            (0.0967)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  90   &                  90   &                  90   &                  90   \\
+LL                  &                 -47   &                 -64   &                 -43   &                 -62   \\
+AIC                 &                 186   &                 144   &                 180   &                 143   \\
+BIC                 &                 301   &                 164   &                 298   &                 165   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:dice}
+\end{table}

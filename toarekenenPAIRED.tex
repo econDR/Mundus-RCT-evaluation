@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA Math: Treatment effect, OLS, paired sample}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models} &\multicolumn{2}{c}{Including baseline outcome}   \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &               0.191***&               0.180** &               0.252***&               0.197***\\
+                    &             (1.386)   &             (1.526)   &             (1.177)   &             (1.341)   \\
+Baseline outcome    &                       &                       &               0.389** &               0.566***\\
+                    &                       &                       &             (0.148)   &             (0.104)   \\
+Pair FE             &                  Yes  &                  No   &                  Yes  &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                &                  82   &                  82    &                  77   &                  77   \\
+LL                  &                -233   &                -271   &                -199   &                -241   \\
+AIC                 &                 555   &                 557   &                 487   &                 500   \\
+BIC                 &                 661   &                 576   &                 590   &                 521   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized beta coefficients; Standard errors in parentheses. Same sample as in Table \ref{tab:toarekNVpaired}}.\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2017; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+ 	\label{tab:toarekpaired} 
+\end{table}

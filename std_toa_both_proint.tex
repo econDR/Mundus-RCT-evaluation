@@ -1,0 +1,37 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA performance controlling for program type: Treatment effect, OLS}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{TOA Math (Non Verbal)}&\multicolumn{2}{c}{TOA Math (Verbal)}               \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect             &               0.367** &               0.351** &               0.502***&               0.564***\\
+                    &             (0.160)   &             (0.162)   &             (0.166)   &             (0.188)   \\
+Treated $\times$ VMBO-A&               0.508** &               0.524** &               0.573*  &               0.442   \\
+&             (0.243)   &             (0.242)   &             (0.311)   &             (0.306)   \\
+Treated $\times$ ISK&               0.700*  &               0.670*  &               0.286   &               0.184   \\
+&             (0.385)   &             (0.381)   &             (0.298)   &             (0.308)   \\
+Treated $\times$ PRO&               0.100   &               0.117   &              -0.462*  &              -0.498*  \\
+&             (0.270)   &             (0.272)   &             (0.261)   &             (0.268)   \\
+VMBO-A              &              -1.830** &              -1.333   &              -2.714***&              -2.133***\\
+                    &             (0.776)   &             (0.887)   &             (0.707)   &             (0.748)   \\
+ISK                 &              -1.692** &              -1.377** &              -2.312***&              -1.871***\\
+                    &             (0.693)   &             (0.603)   &             (0.588)   &             (0.637)   \\
+PRO                 &              -1.275***&              -1.016***&              -2.093***&              -1.513** \\
+                    &             (0.183)   &             (0.307)   &             (0.426)   &             (0.665)   \\
+Baseline outcome&                       &               0.192   &                       &                 0.245     \\
+                    &                       &             (0.133)   &                       &              (0.229)  \\
+Pair FE             &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Obs                 &                  84   &                  84   &                  76   &                  76   \\
+LL                  &                 -32   &                 -30   &                 -25   &                 -23   \\
+AIC                 &                 154   &                 154   &                 133   &                 132   \\
+BIC                 &                 263   &                 268   &                 231   &                 232   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized coefficients; Robust standard errors in parentheses. Reference category for school type (omitted):}\\
+\multicolumn{5}{l}{\footnotesize VMBO-B. Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toaboth} 
+\end{table}

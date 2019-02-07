@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA Math (Verbal): Treatment effect, OLS, excluding 1J1 and 1B1}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &               0.490** &               0.490** &               0.459** &               0.448** \\
+                    &             (0.190)   &             (0.202)   &             (0.180)   &             (0.177)   \\
+Baseline outcome    &                       &                       &               0.511   &               0.706***\\
+                    &                       &                       &             (0.318)   &             (0.194)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  46   &                  46   &                  46   &                  46   \\
+LL                  &                 -28   &                 -45   &                 -25   &                 -38   \\
+AIC                 &                 104   &                 101   &                 101   &                  90   \\
+BIC                 &                 148   &                 112   &                 147   &                 103   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized coefficients; Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toa_noscrap}
+\end{table}

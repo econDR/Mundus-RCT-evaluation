@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA Math (Non-language): Treatment effect, OLS}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &               0.686***&               0.686***&               0.676***&               0.658***\\
+                    &             (0.118)   &             (0.164)   &             (0.115)   &             (0.127)   \\
+Baseline outcome	&                       &                       &               0.208   &               0.563***\\
+                    &                       &                       &             (0.184)   &             (0.112)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  84   &                  84   &                  84   &                  84   \\
+LL                  &                 -37   &                 -91   &                 -35   &                 -69   \\
+AIC                 &                 160   &                 198   &                 159   &                 157   \\
+BIC                 &                 265   &                 218   &                 266   &                 179   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized coefficients; Robust standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toarekNV}
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{TOA Math (Non-Verbal): Treatment effect, OLS, excluding 1J1 and 1B1}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Treatment effect    &               0.671***&               0.671***&               0.675***&               0.674***\\
+                    &             (0.143)   &             (0.186)   &             (0.141)   &             (0.140)   \\
+Baseline outcome 	&                       &                       &               0.901** &               0.687***\\
+                    &                       &                       &             (0.358)   &             (0.102)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  56   &                  56   &                  56   &                  56   \\
+LL                  &                 -24   &                 -56   &                 -22   &                 -40   \\
+AIC                 &                 106   &                 124   &                 104   &                  93   \\
+BIC                 &                 165   &                 136   &                 165   &                 107   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standardized coefficients; Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:toa_noscrapNV}
+\end{table}

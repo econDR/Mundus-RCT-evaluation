@@ -1,0 +1,27 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of treatment on Trust in People}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+
+\midrule
+Treatment           &               1.583***&               0.854** &               1.392** &               0.800*  \\
+                    &             (0.549)   &             (0.422)   &             (0.630)   &             (0.461)   \\
+Baseline outcome   &                       &                       &               0.932***&               0.589** \\
+                    &                       &                       &             (0.338)   &             (0.241)   \\
+Pair FE             &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE            &                  No   &                 Yes   &                  No   &                 Yes   \\
+\midrule
+Obs                 &                  90   &                  90   &                  86   &                  86   \\
+LL                  &                 -58   &                 -94   &                 -53   &                 -87   \\
+AIC                 &                 212   &                 208   &                 166   &                 195   \\
+BIC                 &                 332   &                 233   &                 240   &                 222   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Ordered Logit. Robust standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: test score in Feb 2018; Baseline outcome: test score in Sept 2017.}\\
+\multicolumn{5}{l}{\footnotesize * p$<$0.10, ** p$<$0.05, *** p$<$0.01}\\
+\end{tabular}
+\label{tab:trust}
+\end{table}
